@@ -1,78 +1,39 @@
+<!-- This example requires Tailwind CSS v2.0+ -->
 <template>
-  <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">
-        coming-soon
-      </h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
-    </div>
+  <div>
+    <Hero />
+    <WhyLotus />
+    <About />
+    <Work />
+    <Different />
+    <Team />
+    <Contact />
   </div>
 </template>
 
 <script>
-export default {}
+import Hero from "../components/Index/Hero.vue";
+import WhyLotus from "../components/Index/WhyLotus.vue";
+import About from "../components/Index/About.vue";
+import Work from "../components/Index/Work.vue";
+import Different from "../components/Index/Different.vue";
+import Team from "../components/Index/Team";
+import Contact from "../components/Index/Contact.vue";
+
+export default {
+  components: {
+    Hero,
+    WhyLotus,
+    About,
+    Work,
+    Different,
+    Team,
+    Contact,
+  },
+  setup() {
+    return {
+      navigation,
+    };
+  },
+};
 </script>
-
-<style>
-/* Sample `apply` at-rules with Tailwind CSS
-.container {
-@apply min-h-screen flex justify-center items-center text-center mx-auto;
-}
-*/
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family:
-    'Quicksand',
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
-</style>
