@@ -45,7 +45,13 @@
               bg-white
             "
           >
-            <form name="contact" method="POST" data-netlify="true">
+            <form
+              name="contact"
+              method="POST"
+              enctype="application/x-www-form-urlencoded"
+              data-netlify-honeypot="bot-field"
+              data-netlify="true"
+            >
               <div class="flex-auto p-5 lg:p-10">
                 <h4 class="text-2xl font-semibold">Want to work with us?</h4>
 
@@ -73,7 +79,7 @@
                     >Full Name*</label
                   ><input
                     type="text"
-                    name="name"
+                    name="full-name"
                     required
                     class="
                       border-0
