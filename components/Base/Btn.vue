@@ -1,6 +1,6 @@
 <template>
-  <a
-    href="#"
+  <button
+    type="submit"
     class="
       w-full
       flex
@@ -21,5 +21,5 @@
     "
   >
     <slot></slot>
-  </a>
+  </button>
 </template>

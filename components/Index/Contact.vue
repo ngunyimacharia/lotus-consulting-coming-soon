@@ -45,112 +45,139 @@
               bg-white
             "
           >
-            <div class="flex-auto p-5 lg:p-10">
-              <h4 class="text-2xl font-semibold">Want to work with us?</h4>
-              <p class="leading-relaxed mt-1 mb-4 text-blueGray-500">
-                Complete this form and we will get back to you in 24 hours.
-              </p>
-              <div class="relative w-full mb-3 mt-8">
-                <label
-                  class="
-                    block
-                    uppercase
-                    text-blueGray-600 text-xs
-                    font-bold
-                    mb-2
-                  "
-                  for="full-name"
-                  >Full Name</label
-                ><input
-                  type="text"
-                  class="
-                    border-0
-                    px-3
-                    py-3
-                    placeholder-blueGray-300
-                    text-blueGray-600
-                    bg-white
-                    rounded
-                    text-sm
-                    shadow
-                    focus:outline-none
-                    focus:ring
-                    w-full
-                    ease-linear
-                    transition-all
-                    duration-150
-                  "
-                  placeholder="Full Name"
-                />
+            <form
+              name="contact"
+              method="POST"
+              data-netlify="true"
+              data-netlify-recaptcha="true"
+            >
+              <div class="flex-auto p-5 lg:p-10">
+                <h4 class="text-2xl font-semibold">Want to work with us?</h4>
+
+                <p class="leading-relaxed mt-1 mb-4 text-blueGray-500">
+                  Complete this form and we will get back to you in 24 hours.
+                </p>
+
+                <div class="relative w-full mb-3 mt-8">
+                  <p class="hidden">
+                    <label>
+                      Don’t fill this out if you’re human:
+                      <input name="bot-field" />
+                    </label>
+                  </p>
+
+                  <label
+                    class="
+                      block
+                      uppercase
+                      text-blueGray-600 text-xs
+                      font-bold
+                      mb-2
+                    "
+                    for="full-name"
+                    >Full Name*</label
+                  ><input
+                    type="text"
+                    name="name"
+                    required
+                    class="
+                      border-0
+                      px-3
+                      py-3
+                      placeholder-blueGray-300
+                      text-blueGray-600
+                      bg-white
+                      rounded
+                      text-sm
+                      shadow
+                      focus:outline-none
+                      focus:ring
+                      w-full
+                      ease-linear
+                      transition-all
+                      duration-150
+                    "
+                    placeholder="Full Name"
+                  />
+                </div>
+
+                <div class="relative w-full mb-3">
+                  <label
+                    class="
+                      block
+                      uppercase
+                      text-blueGray-600 text-xs
+                      font-bold
+                      mb-2
+                    "
+                    for="email"
+                    >Email*</label
+                  ><input
+                    type="email"
+                    required
+                    name="email"
+                    class="
+                      border-0
+                      px-3
+                      py-3
+                      placeholder-blueGray-300
+                      text-blueGray-600
+                      bg-white
+                      rounded
+                      text-sm
+                      shadow
+                      focus:outline-none
+                      focus:ring
+                      w-full
+                      ease-linear
+                      transition-all
+                      duration-150
+                    "
+                    placeholder="Email"
+                  />
+                </div>
+
+                <div class="relative w-full mb-3">
+                  <label
+                    class="
+                      block
+                      uppercase
+                      text-blueGray-600 text-xs
+                      font-bold
+                      mb-2
+                    "
+                    for="message"
+                    >Message*</label
+                  ><textarea
+                    rows="4"
+                    cols="80"
+                    required
+                    name="message"
+                    class="
+                      border-0
+                      px-3
+                      py-3
+                      placeholder-blueGray-300
+                      text-blueGray-600
+                      bg-white
+                      rounded
+                      text-sm
+                      shadow
+                      focus:outline-none
+                      focus:ring
+                      w-full
+                    "
+                    placeholder="Type a message..."
+                  ></textarea>
+                </div>
+
+                <div data-netlify-recaptcha="true"></div>
+
+                <div class="text-center mt-6">
+                  <base-btn> Send Message </base-btn>
+                </div>
               </div>
-              <div class="relative w-full mb-3">
-                <label
-                  class="
-                    block
-                    uppercase
-                    text-blueGray-600 text-xs
-                    font-bold
-                    mb-2
-                  "
-                  for="email"
-                  >Email</label
-                ><input
-                  type="email"
-                  class="
-                    border-0
-                    px-3
-                    py-3
-                    placeholder-blueGray-300
-                    text-blueGray-600
-                    bg-white
-                    rounded
-                    text-sm
-                    shadow
-                    focus:outline-none
-                    focus:ring
-                    w-full
-                    ease-linear
-                    transition-all
-                    duration-150
-                  "
-                  placeholder="Email"
-                />
-              </div>
-              <div class="relative w-full mb-3">
-                <label
-                  class="
-                    block
-                    uppercase
-                    text-blueGray-600 text-xs
-                    font-bold
-                    mb-2
-                  "
-                  for="message"
-                  >Message</label
-                ><textarea
-                  rows="4"
-                  cols="80"
-                  class="
-                    border-0
-                    px-3
-                    py-3
-                    placeholder-blueGray-300
-                    text-blueGray-600
-                    bg-white
-                    rounded
-                    text-sm
-                    shadow
-                    focus:outline-none
-                    focus:ring
-                    w-full
-                  "
-                  placeholder="Type a message..."
-                ></textarea>
-              </div>
-              <div class="text-center mt-6">
-                <base-btn> Send Message </base-btn>
-              </div>
-            </div>
+            </form>
           </div>
         </div>
       </div>
