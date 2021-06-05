@@ -6,7 +6,8 @@
 </head>
 
 <body {{ BODY_ATTRS }}>
-    <form name="contact" method="POST" enctype="application/x-www-form-urlencoded" netlify-honeypot="bot-field" netlify>
+    <form hidden name="contact" method="POST" enctype="application/x-www-form-urlencoded" netlify-honeypot="bot-field"
+        netlify>
         <input type="hidden" name="form-name" value="contact" />
 
         <div class="flex-auto p-5 lg:p-10">
