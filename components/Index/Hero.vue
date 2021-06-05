@@ -61,7 +61,7 @@
               class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start"
             >
               <div class="rounded-md shadow">
-                <base-btn>Download Profile </base-btn>
+                <!-- <base-btn>Download Profile </base-btn> -->
               </div>
             </div>
           </div>
