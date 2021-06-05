@@ -45,12 +45,7 @@
               bg-white
             "
           >
-            <form
-              name="contact"
-              method="POST"
-              data-netlify="true"
-              data-netlify-recaptcha="true"
-            >
+            <form name="contact" method="POST" data-netlify="true">
               <div class="flex-auto p-5 lg:p-10">
                 <h4 class="text-2xl font-semibold">Want to work with us?</h4>
 
@@ -170,8 +165,6 @@
                     placeholder="Type a message..."
                   ></textarea>
                 </div>
-
-                <div data-netlify-recaptcha="true"></div>
 
                 <div class="text-center mt-6">
                   <base-btn> Send Message </base-btn>
