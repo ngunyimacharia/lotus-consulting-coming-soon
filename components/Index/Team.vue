@@ -53,13 +53,13 @@
           />
         </member>
         <member
-          name="Wambua Kausya"
-          title="Skilled researcher,strategic communications, media monitoring, stakeholder Engagement and Public Policy"
-          url="https://www.linkedin.com/in/wambua-kausya-5a8103183/"
+          name="Veselina Kracheva"
+          title="Seasoned manager, expert in strategy, industry insights, economic intelligence"
+          url="https://www.linkedin.com/in/veselinakracheva/"
         >
           <img
-            alt="Wambua Kausya"
-            src="~/assets/images/team/wambua.jpg"
+            alt="Veselina Kracheva"
+            src="~/assets/images/team/veselina.jpg"
             class="shadow-lg rounded-full max-w-full mx-auto"
             style="max-width: 120px; max-height: 120px"
           />

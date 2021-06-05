@@ -4,7 +4,7 @@
       <slot />
       <div class="pt-6 text-center">
         <h5 class="text-xl font-bold text-teal-blue">{{ name }}</h5>
-        <p class="mt-1 text-sm uppercase font-semibold">
+        <p class="h-16 m-2 text-sm uppercase font-semibold">
           {{ title }}
         </p>
         <div class="mt-6">
