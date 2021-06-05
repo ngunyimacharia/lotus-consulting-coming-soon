@@ -49,8 +49,8 @@
               name="contact"
               method="POST"
               enctype="application/x-www-form-urlencoded"
-              data-netlify-honeypot="bot-field"
-              data-netlify="true"
+              netlify-honeypot="bot-field"
+              netlify
             >
               <div class="flex-auto p-5 lg:p-10">
                 <h4 class="text-2xl font-semibold">Want to work with us?</h4>
